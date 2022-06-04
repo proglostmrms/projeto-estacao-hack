@@ -29,5 +29,16 @@
     text-shadow: 4px 4px 8px black;
     font-size: 4vw;
   }
-  
+  /* Seletor id */
+  #agenda th{
+    font-size: 2vw;
+  }
+  /* 100% / 7 colunas */
+  #agenda td{
+ width: cal(100% / 7);
+   /* 100% / 7 linhas  */
+ height: cal(100% / 5);
+  }
+
+
   
