@@ -66,14 +66,78 @@
     </nav>
   </header>
 
-  <main>
-    <h1>Área do aluno</h1>
+  <main class="container my-4">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="text-warning">Área do Aluno</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <form onsubmit="autenticar(event)">
+          <div class="mb-3">
+            <label for="usuario" class="form-label">
+              Usuário
+            </label>
+            <input type="text" 
+                   class="form-control" 
+                   placeholder="Digite seu Usuário"
+                   autocomplete="off"
+                   required
+                   id="usuario">
+          </div>
+          <div class="mb-3">
+            <label for="senha" class="form-label">
+              Senha
+            </label>
+            <input type="password" 
+                   class="form-control" 
+                   placeholder="Digite sua senha"
+                   autocomplete="off"
+                   required
+                   id="senha">
+          </div>
+          <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-primary">
+              Entrar
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-md-12 text-center">
+        <a href="#">Esqueci a senha</a>
+
+        <button id="myModalButton" class="d-none" data-bs-toggle="modal" data-bs-target="#myModal">
+          MostrarModal
+        </button>
+
+        <!--   Modal  -->
+
+        <div class="modal" tabindex="-1" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title text-primary">Alerta</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p id="myModalText"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fim Modal -->
+      </div>
+    </div>
   </main>
 
   <footer class="footer bg-dark p-2 mt-auto flex-shrink-0">
     <div class="d-flex justify-content-center align-items-center">
       <span class="text-white fst-italic">
-        Todos os direitos reservados
+        Todos os direitos reservados MRMs 2022
       </span>
     </div>
   </footer>
